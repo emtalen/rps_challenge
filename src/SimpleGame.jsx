@@ -1,11 +1,13 @@
-import React from 'react';
+import React, { Component } from "react";
 
-const SimpleGame = () => {
-    return (
-        <div>
-            <h1 id='simplegame-header'>Play to score for every win!</h1>
-        </div>
-    )
+class SimpleGame extends Component {
+
+render() {
+  return(
+    <>
+    </>
+  )
+}
 }
 
 export default SimpleGame;

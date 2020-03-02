@@ -1,6 +1,6 @@
 import React from 'react';
 
-const Game = () => {
+const Welcome = () => {
   return (
     <div>
       <h1 id='title'>Rock, Paper, Scissors!</h1>
@@ -13,4 +13,4 @@ const Game = () => {
   )
 };
 
-export default Game;
+export default Welcome;
