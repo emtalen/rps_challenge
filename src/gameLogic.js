@@ -12,7 +12,7 @@ const assessGame = (player1, player2) => {
     case ["rock", "scissors"].join():
     case ["scissors", "paper"].join():
     case ["paper", "rock"].join():
-      result = "Player one wins!";
+      result = "You win!";
       break;
     case ["scissors", "rock"].join():
     case ["paper", "scissors"].join():
@@ -26,4 +26,4 @@ const assessGame = (player1, player2) => {
   return result
 };
 
-export { botMove };
+export { botMove, assessGame };

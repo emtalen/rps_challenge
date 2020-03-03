@@ -31,4 +31,8 @@ describe("User can navigate trough the page", () => {
     cy.get('#scissors').click()
     cy.get('#moves').should('contain', 'You choose scissors')
   })
+
+  it('Scissors wins over paper', () => {
+    cy.get('#scissors').click()
+  })
 });
