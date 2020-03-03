@@ -1,12 +1,14 @@
 import React, { Component } from "react";
-import { botMove, assessGame } from "./gameLogic";
+import { botMove, assessGame, scoreEachWin } from "./gameLogic";
 
 class SimpleGame extends Component {
   state = {
-    playerChoice: "",
-    botChoice: "",
+    playerChoice: '',
+    botChoice: '',
     showMessage: false,
-    results: ""
+    results: '',
+    playerScore: 0,
+    botScore: 0
   };
 
   handleClick(event) {
@@ -16,7 +18,8 @@ class SimpleGame extends Component {
       playerChoice: playerChoice,
       botChoice: botChoice,
       showMessage: true,
-      result: assessGame()
+      result: assessGame(),
+      score: scoreEachWin()
     });
   }
 
@@ -38,6 +41,10 @@ class SimpleGame extends Component {
             <h3>You chose: {this.state.playerChoice}</h3>
             <h3>Computer chose: {this.state.botChoice}</h3>
             <h2>{this.state.results}</h2>
+            <div>
+              {this.state.playerScore}
+              {this.state.botScore}
+            </div>
           </>
         )}
       </>
