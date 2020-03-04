@@ -13,23 +13,23 @@ describe("User can navigate trough the page", () => {
 
   it("user can see three buttons", () => {
     cy.get("#rock").should("contain", "Rock");
-    cy.get("#paper").shoudl("contain", "Paper");
+    cy.get("#paper").should("contain", "Paper");
     cy.get("#scissors").should("contain", "Scissors");
   });
 
   it('user can chose rock as a weapon', () => {
     cy.get('#rock').click()
-    cy.get('#moves').should('contain', 'You choose rock')
+    cy.get('.moves').should('contain', 'You choose: rock')
   })
 
   it('user can chose paper as a weapon', () => {
     cy.get('#paper').click()
-    cy.get('#moves').should('contain', 'You choose paper')
+    cy.get('.moves').should('contain', 'You choose: paper')
   })
 
   it('user can chose scissors as a weapon', () => {
     cy.get('#scissors').click()
-    cy.get('#moves').should('contain', 'You choose scissors')
+    cy.get('.moves').should('contain', 'You choose: scissors')
   })
 
   it('Scissors wins over paper', () => {

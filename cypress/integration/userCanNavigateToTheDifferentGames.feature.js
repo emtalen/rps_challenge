@@ -28,7 +28,7 @@ describe("User can navigate trough the page", () => {
     it("and it displays header", () => {
       cy.get("#bestofthree-header").should(
         "contain",
-        "Play to score by best out of three games!"
+        "Play to score for best out of three games!"
       );
     });
 

@@ -23,7 +23,7 @@ class BestOfThree extends Component {
   render() {
     return (
       <>
-        <h1>Play to score for best out of three games!</h1>
+        <h1 id='bestofthree-header'>Play to score for best out of three games!</h1>
         <button onClick={event => this.handleMove(event)} value="rock">
           Rock
         </button>

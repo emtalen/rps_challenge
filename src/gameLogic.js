@@ -22,15 +22,15 @@ const assessGame = (player1, player2) => {
     case ["rock", "paper"].join():
       result = botWin
       break;
-    default:
-      result = "It's a draw!";
-      break;
+      default:
+        result = "It's a draw!";
+        break;
   }
   return result
 };
 
-const scoreEachWin = (playerWin, playerScore, botScore, results) => {
-  let score = results == playerWin ? playerScore + 1 : botScore + 1;
+const scoreEachWin = (playerWin, playerScore, botScore) => {
+  let score = assessGame() == playerWin ? playerScore++ : botScore++;
   return score 
 }
 
