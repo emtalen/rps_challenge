@@ -29,17 +29,4 @@ const assessGame = (player1, player2) => {
   return result
 };
 
-const scoreEachWin = (playerWin, playerScore, botScore) => {
-  let score = assessGame() == playerWin ? playerScore++ : botScore++;
-  return score 
-}
-
- const bestOfThreeScore = (playerScore, finalPlayerScore, finalBotScore) => {
-  if (playerScore > 1)
-  finalPlayerScore = 1
-  else
-  finalBotScore = 1
-  return finalPlayerScore, finalBotScore
-}
-
-export { botMove, assessGame, scoreEachWin, bestOfThreeScore };
+export { botMove, assessGame };
