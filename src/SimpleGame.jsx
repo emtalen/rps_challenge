@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import { botMove, assessGame } from "./gameLogic";
+
 class SimpleGame extends Component {
   state = {
     playerChoice: "",

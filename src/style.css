@@ -1,0 +1,10 @@
+body {
+  font-family: 'Courier New', Courier, monospace;
+}
+#rock {
+  border: none;
+  background: url('/images/rock.png');
+  padding: 2px 8px;
+  background-size: cover; 
+
+}
