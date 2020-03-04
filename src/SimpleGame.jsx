@@ -11,7 +11,7 @@ class SimpleGame extends Component {
     botScore: 0
   };
 
-  handleClick(event) {
+  handleMove(event) {
     let playerChoice = event.target.value;
     let botChoice = botMove();
     this.setState({
