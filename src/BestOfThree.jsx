@@ -10,6 +10,7 @@ class BestOfThree extends Component {
     gameScorePlayer: 0,
     gameScoreBot: 0
   };
+
   increasePoints = result => {
     let score;
     switch (result) {
@@ -18,12 +19,16 @@ class BestOfThree extends Component {
           state: "playerScore",
           value: this.state.playerScore + 1
         };
+        if (this.state.playerScore == 2) {
+          this.bestOfThreeGame();
+        }
         break;
       case "Computer wins!":
         score = {
           state: "botScore",
           value: this.state.botScore + 1
         };
+        if (this.state.botScore == 2) this.bestOfThreeGame();
         break;
     }
     this.setState({
@@ -31,22 +36,22 @@ class BestOfThree extends Component {
     });
   };
 
-  bestOfThreeGame = (result) => {
+  bestOfThreeGame = result => {
     let gameScore;
     switch (result) {
-    case (this.state.playerScore.count):
-      gameScore = {
-        state: "gameScorePlayer",
-        value: this.state.gameScorePlayer + 1
-      };
-      this.state.playerScore = 0;
-      break;
-    case (this.state.botScore == 2):
-      gameScore = {
-        state: "gameScoreBot",
-        value: this.state.gameScoreBot + 1
-      };
-      this.state.botScore = 0;
+      case this.state.playerScore == 2:
+        gameScore = {
+          state: this.Initialstate.playerScore,
+          value: this.state.gameScorePlayer + 1
+        };
+        this.state.playerScore = 0;
+        break;
+      case this.state.botScore == 2:
+        gameScore = {
+          state: this.Initialstate.botScore,
+          value: this.state.gameScoreBot + 1
+        };
+        this.state.botScore = 0;
     }
     this.setState({
       [gameScore.state]: gameScore.value
@@ -70,7 +75,7 @@ class BestOfThree extends Component {
   render() {
     return (
       <>
-        <h1 id="bestofthree-header">Play to score for best out of three!</h1>
+        <h1 id="bestofthree-header">Play to score for best out of three games!</h1>
 
         <button
           onClick={event => this.handleMove(event)}
@@ -114,6 +119,7 @@ class BestOfThree extends Component {
             </div>
           </>
         )}
+        <a class="ui button" id='go-back-tab' onClick={event =>  window.location.href='/'}>Go back</a>
       </>
     );
   }

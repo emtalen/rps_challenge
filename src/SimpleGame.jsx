@@ -68,15 +68,16 @@ class SimpleGame extends Component {
         </button>
         {this.state.result && (
           <>
-            <h3 className="moves">You chose: {this.state.playerChoice}</h3>
-            <h3 className="moves">Computer chose: {this.state.botChoice}</h3>
+            <h3 id="playermove">You chose: {this.state.playerChoice}</h3>
+            <h3 id="botmove">Computer chose: {this.state.botChoice}</h3>
             <h2>{this.state.result}</h2>
             <div>
-              <div><h5>Player Score: {this.state.playerScore}</h5></div>
-              <div><h5>Computer Score: {this.state.botScore}</h5></div>
+              <div><h5 id='player-score'>Player Score: {this.state.playerScore}</h5></div>
+              <div><h5 id='bot-score'>Computer Score: {this.state.botScore}</h5></div>
             </div>
           </>
         )}
+        <a class="ui button" id='go-back-tab' onClick={event =>  window.location.href='/'}>Go back</a>
       </>
     );
   }
