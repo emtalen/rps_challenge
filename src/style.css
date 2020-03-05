@@ -1,10 +1,184 @@
+* {
+  box-sizing: border-box;
+}
+html, body {
+  margin: 0 auto;
+  height: 100%;
+}
 body {
-  font-family: 'Courier New', Courier, monospace;
+  display: flex;
+  align-items: center;
+  font-family: monospace;
+  justify-content: center;
+  background-color: #1d212b;
+}
+div {
+  position: relative;
+  width: 50vw;
+  height: 60vw;
+  line-height: 10vw;
+  text-align: center;
+  color: #252B37;
+  background-color: #151823;
+  animation: textColor 10s ease infinite;
+}
+div:after {
+  position: absolute;
+  content: "";
+  top: 5vw;
+  left: 0;
+  right: 0;
+  z-index: -1;
+  height: 100%;
+  width: 100%;
+  margin: 0 auto;
+  transform: scale(0.75);
+  -webkit-filter: blur(5vw);
+  -moz-filter: blur(5vw);
+  -ms-filter: blur(5vw);
+  filter: blur(5vw);
+  background: linear-gradient(270deg, #FF69B4, #FF9CF3, #FF6BEC);
+  background-size: 200% 200%;
+  animation: animateGlow 10s ease infinite;
+}
+@keyframes animateGlow {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+@keyframes textColor {
+  0% {
+    color: #FF69B4;
+  }
+  50% {
+    color: #FF9CF3;
+  }
+  100% {
+    color: #FF6BEC;
+  }
 }
 #rock {
   border: none;
-  background: url('/images/rock.png');
-  padding: 2px 8px;
-  background-size: cover; 
+  font-size: xxx-large;
+  
 
 }
+#paper {
+  border: none;
+  font-size: xxx-large;
+ 
+
+}
+
+#scissors {
+  border: none;
+  font-size: xxx-large;
+
+
+}
+
+#go-back-tab {
+  margin-top: 40%;
+}
+
+#score-div {
+  border: black;
+  border-style: double;
+  width: fit-content;
+  padding: 20px;
+  margin: auto;
+  text-align: left;
+}
+
+#title {
+  font-size: 60px;
+  margin-top: 10%;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+#subtitle {
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  font-size: 40px;
+
+}
+
+#simplegame-header {
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  font-size: 40px;
+}
+
+#bestofthree-header {
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  font-size: 40px;
+}
+
+
+button {
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  margin-right: 2%;
+  outline: none;
+  color: #FF9CF3;
+  background-color: #151823;
+}
+
+h5 {
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  font-size: 30px;
+}
+
+h2 {
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  font-size: 50px;
+  margin-bottom: 2%;
+
+}
+
+h4 {
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  font-size: 20px;
+}
+
+h3 {
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  font-size: 20px;
+}
+
+button {
+  letter-spacing: 0;
+}
+button:hover, button:active {
+  letter-spacing: 5px;
+}
+button:after, button:before {
+  backface-visibility: hidden;
+  border: 1px solid #FF9CF3;
+  bottom: 0px;
+  content: " ";
+  display: block;
+  margin: 0 auto;
+  position: relative;
+  transition: all 280ms ease-in-out;
+  width: 0;
+}
+button:hover:after, button:hover:before {
+  backface-visibility: hidden;
+  border-color: #FF9CF3;
+  transition: width 350ms ease-in-out;
+  width: 70%;
+}
+button:hover:before {
+  bottom: auto;
+  top: 0;
+  width: 70%;
+}
+
+.ui.button {
+  background-color: #FF6BEC;
+}
+

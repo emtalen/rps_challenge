@@ -1,68 +1,57 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## RPS Challenge
 
-## Available Scripts
+### Built with
+##### React v.16.12.0, CSS
+##### Testing frameworks: Cypress
+##### Deployed at: Netlify
+##### Link: https://scissorsrockpapergame.netlify.com/
 
-In the project directory, you can run:
+### The code
+This application is a digital version of the traditional game Rock, Paper, Scissors. The player can play against the computer that randomly chooses a weapon and either the player or the computer gets score for each win. 
+The traditional rules apply to this game so rock beats scissors, scissors beats paper and paper beats rock. 
 
-### `yarn start`
+### Dependencies
+- Yarn
+- React
+- Cypress
+- Chance.js
 
-Runs the app in the development mode.<br />
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+### Setup
+To test this application, fork the repo to your own GitHub account and clone it to your local workspace.
 
-The page will reload if you make edits.<br />
-You will also see any lint errors in the console.
+Install all of the dependencies:
 
-### `yarn test`
+``` $ yarn install ```
 
-Launches the test runner in the interactive watch mode.<br />
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Start cypress and run the feature tests:
 
-### `yarn build`
+``` $ yarn run cy:open ```
+``` $ yarn start ```
 
-Builds the app for production to the `build` folder.<br />
-It correctly bundles React in production mode and optimizes the build for the best performance.
+### User Stories
+As a user
+In order to kill some time
+I would like to be able to play rock, paper, scissors
 
-The build is minified and the filenames include the hashes.<br />
-Your app is ready to be deployed!
+As a user
+In order to pick a weapon
+I need to be able to choose a weapon 
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+As a user
+In order to see if I can win over the computer
+I would like the scores to be counted
 
-### `yarn eject`
+### Updates/Improvements
+- Fix tests so that they correctly stub out the computer selection
+- Add/fix and correct the styling
+- Add unit tests 
+- Finish the feature where the user can choose between playing a simple game and playing best out of three
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+### License
+##### MIT-license
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+### Acknowledgement
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
-
-### Analyzing the Bundle Size
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
-
-### Making a Progressive Web App
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
-
-### Advanced Configuration
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
-
-### Deployment
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
-
-### `yarn build` fails to minify
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+Thomas Ochman - for getting me back on my feet and back on the right track
+Oliver Ochman - For helping me with the functionality to count the scores
+Kayla Woodbury - I took the format of your readme, because it was really great!

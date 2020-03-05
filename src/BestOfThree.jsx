@@ -75,12 +75,16 @@ class BestOfThree extends Component {
   render() {
     return (
       <>
-        <h1 id="bestofthree-header">Play to score for best out of three games!</h1>
+        <h1 id="bestofthree-header">
+          Play to score for best out of three games!
+        </h1>
+        <h4>Choose your weapon</h4>
 
         <button
           onClick={event => this.handleMove(event)}
           value="rock"
           id="rock"
+          className="movebutton"
         >
           Rock
         </button>
@@ -88,6 +92,7 @@ class BestOfThree extends Component {
           onClick={event => this.handleMove(event)}
           value="paper"
           id="paper"
+          className="movebutton"
         >
           Paper
         </button>
@@ -95,31 +100,34 @@ class BestOfThree extends Component {
           onClick={event => this.handleMove(event)}
           value="scissors"
           id="scissors"
+          className="movebutton"
         >
           Scissors
         </button>
         {this.state.result && (
           <>
-            <h3 className="moves">You chose: {this.state.playerChoice}</h3>
-            <div>
-              <h5>Player Score: {this.state.playerScore}</h5>
-            </div>
-            <h3 className="moves">Computer chose: {this.state.botChoice}</h3>
-            <div>
-              <h5>Computer Score: {this.state.botScore}</h5>
-            </div>
+            <h3 id="playermove">You chose: {this.state.playerChoice}</h3>
+            <h3 id="playermove">Computer chose: {this.state.botChoice}</h3>
+            <h5>Player Score: {this.state.playerScore}</h5>
+            <h5>Computer Score: {this.state.botScore}</h5>
             <h2>{this.state.result}</h2>
-            <div>
-              <div>
-                <h4>Player total gamescore: {this.state.gameScorePlayer}</h4>
-              </div>
-              <div>
-                <h4>Computer total gamescore: {this.state.gameScoreBot}</h4>
-              </div>
-            </div>
+            <h4 id="gamescore-player">
+              Player total gamescore: {this.state.gameScorePlayer}
+            </h4>
+            <h4 id="gamescore-bot">
+              Computer total gamescore: {this.state.gameScoreBot}
+            </h4>
           </>
         )}
-        <a class="ui button" id='go-back-tab' onClick={event =>  window.location.href='/'}>Go back</a>
+        <div>
+          <a
+            class="ui button"
+            id="go-back-tab"
+            onClick={event => (window.location.href = "/")}
+          >
+            Go back
+          </a>
+        </div>
       </>
     );
   }

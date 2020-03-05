@@ -9,9 +9,9 @@ const botMove = () => {
 let playerWin = "You Win!";
 let botWin = "Computer wins!";
 
-const assessGame = (player1, player2) => {
+const assessGame = (player, bot) => {
   let result;
-  switch ([player1, player2].join()) {
+  switch ([player, bot].join()) {
     case ["rock", "scissors"].join():
     case ["scissors", "paper"].join():
     case ["paper", "rock"].join():

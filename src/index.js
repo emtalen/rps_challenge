@@ -4,6 +4,7 @@ import BestOfThree from './BestOfThree';
 import SimpleGame from './SimpleGame';
 import { Switch, Route, BrowserRouter } from 'react-router-dom';
 import Welcome from './App';
+import './style.css';
 
 
 const App = () => {
