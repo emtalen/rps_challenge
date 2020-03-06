@@ -120,13 +120,13 @@ class BestOfThree extends Component {
           </>
         )}
         <div>
-          <a
+          <button
             class="ui button"
             id="go-back-tab"
             onClick={event => (window.location.href = "/")}
           >
             Go back
-          </a>
+          </button>
         </div>
       </>
     );
