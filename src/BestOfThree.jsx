@@ -106,17 +106,17 @@ class BestOfThree extends Component {
         </button>
         {this.state.result && (
           <>
-            <h3 id="playermove">You chose: {this.state.playerChoice}</h3>
-            <h3 id="playermove">Computer chose: {this.state.botChoice}</h3>
-            <h5>Player Score: {this.state.playerScore}</h5>
-            <h5>Computer Score: {this.state.botScore}</h5>
+            <h5 id="playermove">You chose: {this.state.playerChoice}</h5>
+            <h5 id="playermove">Computer chose: {this.state.botChoice}</h5>
+            <h4>Player Score: {this.state.playerScore}</h4>
+            <h4>Computer Score: {this.state.botScore}</h4>
             <h2>{this.state.result}</h2>
-            <h4 id="gamescore-player">
+            <h3 id="gamescore-player">
               Player total gamescore: {this.state.gameScorePlayer}
-            </h4>
-            <h4 id="gamescore-bot">
+            </h3>
+            <h3 id="gamescore-bot">
               Computer total gamescore: {this.state.gameScoreBot}
-            </h4>
+            </h3>
           </>
         )}
         <div>

@@ -37,7 +37,7 @@ div:after {
   -moz-filter: blur(5vw);
   -ms-filter: blur(5vw);
   filter: blur(5vw);
-  background: linear-gradient(270deg, #FF69B4, #FF9CF3, #FF6BEC);
+  background: linear-gradient(270deg, #FFFFE0, #FFEFD5, #FAFAD2);
   background-size: 200% 200%;
   animation: animateGlow 10s ease infinite;
 }
@@ -54,13 +54,13 @@ div:after {
 }
 @keyframes textColor {
   0% {
-    color: #FF69B4;
+    color: #FFFFE0;
   }
   50% {
-    color: #FF9CF3;
+    color: #FFEFD5;
   }
   100% {
-    color: #FF6BEC;
+    color: #FAFAD2;
   }
 }
 #rock {
@@ -123,13 +123,13 @@ button {
   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
   margin-right: 2%;
   outline: none;
-  color: #FF9CF3;
+  color: #FFEFD5;
   background-color: #151823;
 }
 
 h5 {
   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-  font-size: 30px;
+  font-size: 20px;
 }
 
 h2 {
@@ -141,12 +141,12 @@ h2 {
 
 h4 {
   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-  font-size: 20px;
+  font-size: 25px;
 }
 
 h3 {
   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-  font-size: 20px;
+  font-size: 30px;
 }
 
 button {
@@ -157,7 +157,7 @@ button:hover, button:active {
 }
 button:after, button:before {
   backface-visibility: hidden;
-  border: 1px solid #FF9CF3;
+  border: 1px solid #FFEFD5;
   bottom: 0px;
   content: " ";
   display: block;
@@ -168,7 +168,7 @@ button:after, button:before {
 }
 button:hover:after, button:hover:before {
   backface-visibility: hidden;
-  border-color: #FF9CF3;
+  border-color: #FFEFD5;
   transition: width 350ms ease-in-out;
   width: 70%;
 }
@@ -179,6 +179,6 @@ button:hover:before {
 }
 
 .ui.button {
-  background-color: #FF6BEC;
+  background-color: #FFEFD5;
 }
 

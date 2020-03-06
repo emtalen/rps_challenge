@@ -76,12 +76,12 @@ class SimpleGame extends Component {
         </button>
         {this.state.result && (
           <>
-            <h3 id="playermove">You chose: {this.state.playerChoice}</h3>
-            <h3 id="botmove">Computer chose: {this.state.botChoice}</h3>
+            <h5 id="playermove">You chose: {this.state.playerChoice}</h5>
+            <h5 id="botmove">Computer chose: {this.state.botChoice}</h5>
             <h2>{this.state.result}</h2>
 
-            <h5 id="player-score">Player Score: {this.state.playerScore}</h5>
-            <h5 id="bot-score">Computer Score: {this.state.botScore}</h5>
+            <h4 id="player-score">Player Score: {this.state.playerScore}</h4>
+            <h4 id="bot-score">Computer Score: {this.state.botScore}</h4>
           </>
         )}
         <div>
