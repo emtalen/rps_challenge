@@ -1,10 +1,12 @@
 ## RPS Challenge
 
+### Authors
+[Emma-Maria Thalen](https://github.com/emtalen)
+
 ### Built with
-##### React v.16.12.0, CSS
-##### Testing frameworks: Cypress
-##### Deployed at: Netlify
-##### Link: https://scissorsrockpapergame.netlify.com/
+**Front End:** React v.16.12.0, | CSS 
+**Testing frameworks:** Cypress
+**Deployed at:** [Netlify](https://scissorsrockpapergame.netlify.com/)
 
 ### The code
 This application is a digital version of the traditional game Rock, Paper, Scissors. The player can play against the computer that randomly chooses a weapon and either the player or the computer gets score for each win. 
@@ -52,6 +54,5 @@ I would like the scores to be counted
 
 ### Acknowledgement
 
-Thomas Ochman - for getting me back on my feet and back on the right track
-Oliver Ochman - For helping me with the functionality to count the scores
-Kayla Woodbury - I took the format of your readme, because it was really great!
+[Thomas Ochman](https://github.com/tochman/) - for getting me back on my feet and back on the right track
+[Oliver Ochman](https://github.com/oliverochman/) For helping me with the functionality to count the scores
